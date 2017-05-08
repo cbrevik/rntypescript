@@ -4,18 +4,18 @@ import {
     Text,
     View
 } from 'react-native'
-interface Props { } // 1
-interface State { // 2
+interface Props { }
+interface State {
     name: string
 }
-export default class App extends Component<Props, State> { // 3
-    state = { name: 'Nader' } // 4
+export default class App extends Component<Props, State> {
+    state = { name: 'Christian' }
 
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>
-                    Welcome {this.state.name}! // 5
+                    Welcome {this.state.name}!
                 </Text>
             </View>
         );
